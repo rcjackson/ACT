@@ -135,11 +135,9 @@ def determine_time_delta(time, default=60):
     with warnings.catch_warnings():
         warnings.filterwarnings('ignore', category=RuntimeWarning)
         if time.size > 1:
-            try:
-                mode = stats.mode(np.diff(time), keepdims=True)
-            except TypeError:
-                mode = stats.mode(np.diff(time))
-            time_delta = mode.mode[0]
+            dt = np.diff(time)                                  # dtype: timedelta64[...]
+            vals, counts = np.unique(dt, return_counts=True)    # works with timedelta64
+            time_delta = vals[np.argmax(counts)]                # timedelta64 result            
             time_delta = time_delta.astype('timedelta64[s]').astype(float)
         else:
             time_delta = default

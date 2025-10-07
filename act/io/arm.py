@@ -856,6 +856,7 @@ def read_arm_mmcr(filenames):
         if nc is not None:
             ds = xr.open_dataset(xr.backends.NetCDF4DataStore(nc))
             multi_ds.append(ds)
+            
     # Concatenate datasets together
     if len(multi_ds) > 1:
         ds = xr.concat(multi_ds, dim='time')
