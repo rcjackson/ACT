@@ -1756,7 +1756,7 @@ class TimeSeriesDisplay(Display):
         xdata = self._ds[dsname][dim[0]]
 
         # Get data and attributes
-        if not f'qc_{data_field}_dummy' in self._ds[dsname].variables:
+        if f'qc_{data_field}_dummy' not in self._ds[dsname].variables:
             qc_data_field = self._ds[dsname].qcfilter.check_for_ancillary_qc(
                 data_field, add_if_missing=False, cleanup=False
             )
