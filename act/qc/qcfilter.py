@@ -8,6 +8,7 @@ routines in ACT.
 import dask
 import numpy as np
 import xarray as xr
+import warnings
 
 from act.qc import comparison_tests, qctests, bsrn_tests, qc_summary
 from act.utils.data_utils import get_missing_value
@@ -1194,8 +1195,8 @@ class QCFilter(qctests.QCTests, comparison_tests.QCTests, bsrn_tests.QCTests, qc
         qc_var_name = 'qc_' + var_name + '_dummy'
         if qc_var_name in self._ds.variables:
             # Clear the dummy variable if it already exists
-            raise Warning(f'Dummy quality control variable {qc_var_name} already exists. It will be cleared and recreated.')
-            del ds[qc_var_name]   
+            warnings.warn(f'Dummy quality control variable {qc_var_name} already exists. It will be cleared and recreated.')
+            del self._ds[qc_var_name]   
          
         # Create the quality control variable with same dimensions as data variable.
         qc_data = np.zeros(self._ds[var_name].shape, dtype=bool)

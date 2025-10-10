@@ -10,7 +10,7 @@ import xarray as xr
 from act.io.arm import read_arm_netcdf
 from act.qc.arm import add_dqr_to_qc
 from act.qc.qcfilter import parse_bit, set_bit, unset_bit
-from act.tests import EXAMPLE_MET1, EXAMPLE_METE40, EXAMPLE_IRT25m20s
+from act.tests import EXAMPLE_MET1, EXAMPLE_METE40, EXAMPLE_IRT25m20s, EXAMPLE_SMPS
 
 try:
     import scikit_posthocs  # noqa
@@ -465,6 +465,17 @@ def test_datafilter():
     ds.close()
     del ds
 
+def test_qc_dummy_var():
+    ds = read_arm_netcdf(EXAMPLE_SMPS, cleanup_qc=True)
+    ds.qcfilter.create_dummy_qc_variable('merged_dN_dlogDp', 
+                                     rm_assessments=['Bad', 'Incorrect', 'Indeterminate', 'Suspect'])
+    assert 'qc_merged_dN_dlogDp_dummy' in ds.variables.keys()
+    total_sum = ds['qc_merged_dN_dlogDp_dummy'].sum().values
+    assert total_sum == 1696   
+    ds.qcfilter.create_dummy_qc_variable('merged_dN_dlogDp', rm_assessments=["Bad"])
+    total_sum = ds['qc_merged_dN_dlogDp_dummy'].sum().values
+    assert total_sum == 1060
+    ds.close()
 
 def test_qc_data_type():
     drop_vars = [
