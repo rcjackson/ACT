@@ -1,0 +1,1124 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>act.io.ameriflux &#8212; ACT Documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css?v=d2d258e8" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/act-theme.css?v=e2ee527d" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=b3ba4146"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-8YN80YZDD8"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-8YN80YZDD8');
+            </script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/act/io/ameriflux';</script>
+    <script src="../../../_static/doc_shared.js?v=4c9803b4"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1" /> 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../../blog/atom.xml"
+  title="ACT Blog"
+/>
+  
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">ACT Documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../userguide/GUIDE_V2.html">
+    ACT Version 2 Release Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../userguide/index.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../API/index.html">
+    API Reference Manual
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../source/auto_examples/index.html">
+    ACT Example Gallery
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../blog.html">
+    Blog
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://github.com/ARM-DOE/ACT/issues">
+    GitHub Issue Tracker
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ARM-DOE/ACT" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../userguide/GUIDE_V2.html">
+    ACT Version 2 Release Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../userguide/index.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../API/index.html">
+    API Reference Manual
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../source/auto_examples/index.html">
+    ACT Example Gallery
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../blog.html">
+    Blog
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://github.com/ARM-DOE/ACT/issues">
+    GitHub Issue Tracker
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ARM-DOE/ACT" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">act.io.ameriflux</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                   <h1>Source code for act.io.ameriflux</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This module contains I/O operations for the U.S. Department of Energy</span>
+<span class="sd">AmeriFlux program (https://ameriflux.lbl.gov/).</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">xarray</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xr</span>
+
+
+<div class="viewcode-block" id="read_ameriflux"><a class="viewcode-back" href="../../../API/generated/act.io.read_ameriflux.html#act.io.read_ameriflux">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">read_ameriflux</span><span class="p">(</span>
+    <span class="n">filename</span><span class="p">,</span>
+    <span class="n">metadata_filename</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">data_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">timestep</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">rename_vars_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">variable_units_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns `xarray.Dataset` with stored data from FLUXNET or BASE-BADM and</span>
+<span class="sd">    possible metadata from a user-defined metadata excel files for a single datastream.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    filename : str</span>
+<span class="sd">        Filename of Ameriflux dataset</span>
+<span class="sd">    metadata_filename : str</span>
+<span class="sd">        Excel file usually provided with Ameriflux dataset that contains the data&#39;s metadata.</span>
+<span class="sd">        Default is None.</span>
+<span class="sd">    data_type : str</span>
+<span class="sd">        Type of data file to be read. Valid options are &#39;fluxnet&#39; and &#39;base&#39;.</span>
+<span class="sd">        Default is None and will try to determine data type from filename.</span>
+<span class="sd">    timestep : str</span>
+<span class="sd">        Timestep of data, this parameter is only used for &#39;fluxnet&#39; data types and if</span>
+<span class="sd">        the time format can&#39;t be determined by the filename.</span>
+<span class="sd">        Default is None, options are &#39;year&#39;, &#39;month&#39;, &#39;week&#39;, &#39;day&#39;, and &#39;hour&#39;.</span>
+<span class="sd">    rename_vars_dict : dict</span>
+<span class="sd">        A dictionary containing current variable names and new variable names to replace</span>
+<span class="sd">        the current variable names.</span>
+<span class="sd">        Default is None and variables are not renamed.</span>
+<span class="sd">    variable_units_dict : dict</span>
+<span class="sd">        A dictionary containing current variable names and units to be added to that variable.</span>
+<span class="sd">        Default is None and uses current units from Ameriflux&#39;s unit database.</span>
+
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    ds : xarray.Dataset</span>
+<span class="sd">        ACT Xarray dataset.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">default_units_dict</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;COND_WATER&#39;</span><span class="p">:</span> <span class="s1">&#39;S cm-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;DO&#39;</span><span class="p">:</span> <span class="s1">&#39;mol L-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PCH4&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolCH4 mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PCO2&#39;</span><span class="p">:</span> <span class="s1">&#39;molCO2 mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PN2O&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolN2O mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PPFD_UW_IN&#39;</span><span class="p">:</span> <span class="s1">&#39;molPhotons m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;TW&#39;</span><span class="p">:</span> <span class="s1">&#39;deg C&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;DBH&#39;</span><span class="p">:</span> <span class="s1">&#39;cm&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;LEAF_WET&#39;</span><span class="p">:</span> <span class="s1">&#39;%&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SAP_DT&#39;</span><span class="p">:</span> <span class="s1">&#39;deg C&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SAP_FLOW&#39;</span><span class="p">:</span> <span class="s1">&#39;mmolH2O m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;T_BOLE&#39;</span><span class="p">:</span> <span class="s1">&#39;deg C&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;T_CANOPY&#39;</span><span class="p">:</span> <span class="s1">&#39;deg C&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FETCH_70&#39;</span><span class="p">:</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FETCH_80&#39;</span><span class="p">:</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FETCH_90&#39;</span><span class="p">:</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FETCH_FILTER&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FETCH_MAX&#39;</span><span class="p">:</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;CH4&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolCH4 mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;CH4_MIXING_RATIO&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolCH4 mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;CO&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolCO mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;CO2&#39;</span><span class="p">:</span> <span class="s1">&#39;molCO2 mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;CO2_MIXING_RATIO&#39;</span><span class="p">:</span> <span class="s1">&#39;molCO2 mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;CO2_SIGMA&#39;</span><span class="p">:</span> <span class="s1">&#39;molCO2 mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;CO2C13&#39;</span><span class="p">:</span> <span class="s1">&#39;(permil)&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FC&#39;</span><span class="p">:</span> <span class="s1">&#39;molCO2 m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FCH4&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolCH4 m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FN2O&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolN2O m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FNO&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolNO m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FNO2&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolNO2 m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FO3&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolO3 m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;H2O&#39;</span><span class="p">:</span> <span class="s1">&#39;mmolH2O mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;H2O_MIXING_RATIO&#39;</span><span class="p">:</span> <span class="s1">&#39;mmolH2O mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;H2O_SIGMA&#39;</span><span class="p">:</span> <span class="s1">&#39;mmolH2O mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;N2O&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolN2O mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;N2O_MIXING_RATIO&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolN2O mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NO&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolNO mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NO2&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolNO2 mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;O3&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolO3 mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SC&#39;</span><span class="p">:</span> <span class="s1">&#39;molCO2 m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SCH4&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolCH4 m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SN2O&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolN2O m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SNO&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolNO m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SNO2&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolNO2 m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SO2&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolSO2 mol-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SO3&#39;</span><span class="p">:</span> <span class="s1">&#39;nmolO3 m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FH2O&#39;</span><span class="p">:</span> <span class="s1">&#39;mmolH2O m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;G&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;H&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;LE&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SB&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SG&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SH&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SLE&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PA&#39;</span><span class="p">:</span> <span class="s1">&#39;kPa&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PBLH&#39;</span><span class="p">:</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;RH&#39;</span><span class="p">:</span> <span class="s1">&#39;%&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;T_SONIC&#39;</span><span class="p">:</span> <span class="s1">&#39;deg C&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;T_SONIC_SIGMA&#39;</span><span class="p">:</span> <span class="s1">&#39;deg C&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;TA&#39;</span><span class="p">:</span> <span class="s1">&#39;deg C&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;VPD&#39;</span><span class="p">:</span> <span class="s1">&#39;hPa&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;D_SNOW&#39;</span><span class="p">:</span> <span class="s1">&#39;cm&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;P&#39;</span><span class="p">:</span> <span class="s1">&#39;mm&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;P_RAIN&#39;</span><span class="p">:</span> <span class="s1">&#39;mm&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;P_SNOW&#39;</span><span class="p">:</span> <span class="s1">&#39;mm&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;RUNOFF&#39;</span><span class="p">:</span> <span class="s1">&#39;mm&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;STEMFLOW&#39;</span><span class="p">:</span> <span class="s1">&#39;mm&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;THROUGHFALL&#39;</span><span class="p">:</span> <span class="s1">&#39;mm&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ALB&#39;</span><span class="p">:</span> <span class="s1">&#39;%&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;APAR&#39;</span><span class="p">:</span> <span class="s1">&#39;molPhoton m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;EVI&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FAPAR&#39;</span><span class="p">:</span> <span class="s1">&#39;%&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FIPAR&#39;</span><span class="p">:</span> <span class="s1">&#39;%&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;LW_BC_IN&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;LW_BC_OUT&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;LW_IN&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;LW_OUT&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;MCRI&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;MTCI&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NDVI&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NETRAD&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NIRV&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2 sr-1 nm-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PPFD_BC_IN&#39;</span><span class="p">:</span> <span class="s1">&#39;molPhoton m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PPFD_BC_OUT&#39;</span><span class="p">:</span> <span class="s1">&#39;molPhoton m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PPFD_DIF&#39;</span><span class="p">:</span> <span class="s1">&#39;molPhoton m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PPFD_DIR&#39;</span><span class="p">:</span> <span class="s1">&#39;molPhoton m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PPFD_IN&#39;</span><span class="p">:</span> <span class="s1">&#39;molPhoton m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PPFD_OUT&#39;</span><span class="p">:</span> <span class="s1">&#39;molPhoton m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PRI&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;R_UVA&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;R_UVB&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;REDCI&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;REP&#39;</span><span class="p">:</span> <span class="s1">&#39;nm&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SPEC_NIR_IN&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2 nm-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SPEC_NIR_OUT&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2 sr-1 nm-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SPEC_NIR_REFL&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SPEC_PRI_REF_IN&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2 nm-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SPEC_PRI_REF_OUT&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2 sr-1 nm-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SPEC_PRI_REF_REFL&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SPEC_PRI_TGT_IN&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2 nm-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SPEC_PRI_TGT_OUT&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2 sr-1 nm-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SPEC_PRI_TGT_REFL&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SPEC_RED_IN&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2 nm-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SPEC_RED_OUT&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2 sr-1 nm-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SPEC_RED_REFL&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SR&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SW_BC_IN&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SW_BC_OUT&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SW_DIF&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SW_DIR&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SW_IN&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SW_OUT&#39;</span><span class="p">:</span> <span class="s1">&#39;W m-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;TCARI&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SWC&#39;</span><span class="p">:</span> <span class="s1">&#39;%&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SWP&#39;</span><span class="p">:</span> <span class="s1">&#39;kPa&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;TS&#39;</span><span class="p">:</span> <span class="s1">&#39;deg C&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;TSN&#39;</span><span class="p">:</span> <span class="s1">&#39;deg C&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;WTD&#39;</span><span class="p">:</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;MO_LENGTH&#39;</span><span class="p">:</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;TAU&#39;</span><span class="p">:</span> <span class="s1">&#39;kg m-1 s-2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;U_SIGMA&#39;</span><span class="p">:</span> <span class="s1">&#39;m s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;USTAR&#39;</span><span class="p">:</span> <span class="s1">&#39;m s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;V_SIGMA&#39;</span><span class="p">:</span> <span class="s1">&#39;m s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;W_SIGMA&#39;</span><span class="p">:</span> <span class="s1">&#39;m s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;WD&#39;</span><span class="p">:</span> <span class="s1">&#39;Decimal degrees&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;WD_SIGMA&#39;</span><span class="p">:</span> <span class="s1">&#39;decimal degree&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;WS&#39;</span><span class="p">:</span> <span class="s1">&#39;m s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;WS_MAX&#39;</span><span class="p">:</span> <span class="s1">&#39;m s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ZL&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;GPP&#39;</span><span class="p">:</span> <span class="s1">&#39;molCO2 m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NEE&#39;</span><span class="p">:</span> <span class="s1">&#39;molCO2 m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;RECO&#39;</span><span class="p">:</span> <span class="s1">&#39;molCO2 m-2 s-1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FC_SSITC_TEST&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FCH4_SSITC_TEST&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FN2O_SSITC_TEST&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FNO_SSITC_TEST&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FNO2_SSITC_TEST&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FO3_SSITC_TEST&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;H_SSITC_TEST&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;LE_SSITC_TEST&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;TAU_SSITC_TEST&#39;</span><span class="p">:</span> <span class="s1">&#39;nondimensional&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="c1"># Reader section for BASE BADM datasets</span>
+    <span class="c1"># Differs from fluxnet as there is metadata in the first few lines</span>
+    <span class="c1"># of the csv file.</span>
+    <span class="k">if</span> <span class="n">data_type</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">data_type</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span>
+            <span class="n">file_data_type</span> <span class="o">=</span> <span class="s1">&#39;base&#39;</span>
+        <span class="k">elif</span> <span class="n">data_type</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;fluxnet&#39;</span><span class="p">:</span>
+            <span class="n">file_data_type</span> <span class="o">=</span> <span class="s1">&#39;fluxnet&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Must choose a valid data_type, either &#39;base&#39; or &#39;fluxnet&#39;&quot;</span><span class="p">)</span>
+    <span class="c1"># Try to automatically get data type if data type isn&#39;t provided</span>
+    <span class="k">elif</span> <span class="n">data_type</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="s1">&#39;FLUXNET&#39;</span> <span class="ow">in</span> <span class="n">filename</span><span class="p">:</span>
+        <span class="n">file_data_type</span> <span class="o">=</span> <span class="s1">&#39;fluxnet&#39;</span>
+    <span class="k">elif</span> <span class="n">data_type</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="s1">&#39;BASE-BADM&#39;</span> <span class="ow">in</span> <span class="n">filename</span><span class="p">:</span>
+        <span class="n">file_data_type</span> <span class="o">=</span> <span class="s1">&#39;base&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+            <span class="s1">&#39;Could not determine the data type from the filename &#39;</span>
+            <span class="s1">&#39; Please provide a valid data type to the data_type parameter!&#39;</span>
+        <span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">file_data_type</span> <span class="o">==</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span>
+        <span class="c1"># Grab site and version metadata</span>
+        <span class="n">metadata</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">site</span> <span class="o">=</span> <span class="n">metadata</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;# Site&#39;</span><span class="p">]</span>
+        <span class="n">version</span> <span class="o">=</span> <span class="n">metadata</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;# Version&#39;</span><span class="p">]</span>
+
+        <span class="c1"># Files are hourly, set the time format</span>
+        <span class="n">_format</span> <span class="o">=</span> <span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2">%H%M&quot;</span>
+
+        <span class="c1"># Read in actual data</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+        <span class="c1"># Set time and format time to datetime64</span>
+        <span class="n">key</span> <span class="o">=</span> <span class="s1">&#39;TIMESTAMP_START&#39;</span>
+        <span class="n">df</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="n">_format</span><span class="p">)</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;TIMESTAMP_START&#39;</span><span class="p">,</span> <span class="s1">&#39;TIMESTAMP_END&#39;</span><span class="p">])</span>
+
+        <span class="c1"># Convert dataframe to xarray dataset</span>
+        <span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">from_dataframe</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+        <span class="c1"># Add site and version to attributes</span>
+        <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;site&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">site</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;version&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">version</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+    <span class="c1"># Reader for fluxnet files</span>
+    <span class="c1"># Fluxnet files can be formatted in different time samplings</span>
+    <span class="k">elif</span> <span class="n">file_data_type</span> <span class="o">==</span> <span class="s1">&#39;fluxnet&#39;</span><span class="p">:</span>
+        <span class="c1"># Checks timestep in filename, if not, will check timestep parameter</span>
+        <span class="k">if</span> <span class="s1">&#39;YY&#39;</span> <span class="ow">in</span> <span class="n">filename</span> <span class="ow">or</span> <span class="n">timestep</span> <span class="o">==</span> <span class="s1">&#39;year&#39;</span><span class="p">:</span>
+            <span class="n">_format</span> <span class="o">=</span> <span class="s2">&quot;%Y&quot;</span>
+        <span class="k">elif</span> <span class="s1">&#39;MM&#39;</span> <span class="ow">in</span> <span class="n">filename</span> <span class="ow">or</span> <span class="n">timestep</span> <span class="o">==</span> <span class="s1">&#39;month&#39;</span><span class="p">:</span>
+            <span class="n">_format</span> <span class="o">=</span> <span class="s2">&quot;%Y%m&quot;</span>
+        <span class="k">elif</span> <span class="s1">&#39;DD&#39;</span> <span class="ow">in</span> <span class="n">filename</span> <span class="ow">or</span> <span class="s1">&#39;WW&#39;</span> <span class="ow">in</span> <span class="n">filename</span> <span class="ow">or</span> <span class="n">timestep</span> <span class="o">==</span> <span class="s1">&#39;week&#39;</span> <span class="ow">or</span> <span class="n">timestep</span> <span class="o">==</span> <span class="s1">&#39;day&#39;</span><span class="p">:</span>
+            <span class="n">_format</span> <span class="o">=</span> <span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span>
+        <span class="k">elif</span> <span class="s1">&#39;HH&#39;</span> <span class="ow">in</span> <span class="n">filename</span> <span class="ow">or</span> <span class="n">timestep</span> <span class="o">==</span> <span class="s1">&#39;day&#39;</span><span class="p">:</span>
+            <span class="n">_format</span> <span class="o">=</span> <span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2">%H%M&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Incorrect timestep provided or no timestep determined from filename, &quot;</span>
+                <span class="s2">&quot;please provide either year, month, week, day or hour for the timestep parameter.&quot;</span>
+            <span class="p">)</span>
+        <span class="c1"># Read data into a pandas dataframe</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+
+        <span class="c1"># Set time and convert to datetime64</span>
+        <span class="k">if</span> <span class="s1">&#39;TIMESTAMP_START&#39;</span> <span class="ow">in</span> <span class="n">df</span><span class="p">:</span>
+            <span class="n">key</span> <span class="o">=</span> <span class="s1">&#39;TIMESTAMP_START&#39;</span>
+            <span class="n">df</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="n">_format</span><span class="p">)</span>
+            <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span>
+            <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;TIMESTAMP_START&#39;</span><span class="p">,</span> <span class="s1">&#39;TIMESTAMP_END&#39;</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">key</span> <span class="o">=</span> <span class="s1">&#39;TIMESTAMP&#39;</span>
+            <span class="n">df</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="n">_format</span><span class="p">)</span>
+            <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span>
+            <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+
+        <span class="c1"># Convert to xarray dataset</span>
+        <span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">from_dataframe</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+    <span class="c1"># Renames variables if user provides new names</span>
+    <span class="k">if</span> <span class="n">rename_vars_dict</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">ds</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">rename_vars</span><span class="p">(</span><span class="n">rename_vars_dict</span><span class="p">)</span>
+
+    <span class="c1"># Add _FILL_VALUE attribute</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">ds</span><span class="o">.</span><span class="n">variables</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="k">if</span> <span class="o">-</span><span class="mf">9999.0</span> <span class="ow">in</span> <span class="n">ds</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="ow">or</span> <span class="o">-</span><span class="mi">9999</span> <span class="ow">in</span> <span class="n">ds</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">:</span>
+            <span class="n">ds</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;_FILL_VALUE&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">9999</span>
+
+    <span class="c1"># Add nans where fill value is present</span>
+    <span class="n">ds</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">ds</span> <span class="o">!=</span> <span class="o">-</span><span class="mf">9999.0</span><span class="p">)</span>
+
+    <span class="c1"># Add units from the unit dictionary</span>
+    <span class="c1"># Matches keys that have different levels as well such as SWC_1_1_1</span>
+    <span class="c1"># Only works for base dataset</span>
+    <span class="k">if</span> <span class="n">variable_units_dict</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">file_data_type</span> <span class="o">==</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">ds</span><span class="o">.</span><span class="n">variables</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;TS_[\d]&#39;</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+                    <span class="n">unit_key</span> <span class="o">=</span> <span class="s1">&#39;TS&#39;</span>
+                    <span class="n">ds</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">default_units_dict</span><span class="p">[</span><span class="n">unit_key</span><span class="p">]</span>
+                <span class="k">elif</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;SWC_[\d]&#39;</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+                    <span class="n">unit_key</span> <span class="o">=</span> <span class="s1">&#39;SWC&#39;</span>
+                    <span class="n">ds</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">default_units_dict</span><span class="p">[</span><span class="n">unit_key</span><span class="p">]</span>
+                <span class="k">elif</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;G_[\d]&#39;</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+                    <span class="n">unit_key</span> <span class="o">=</span> <span class="s1">&#39;G&#39;</span>
+                    <span class="n">ds</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">default_units_dict</span><span class="p">[</span><span class="n">unit_key</span><span class="p">]</span>
+                <span class="k">elif</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;VPD_&#39;</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+                    <span class="n">unit_key</span> <span class="o">=</span> <span class="s1">&#39;VPD&#39;</span>
+                    <span class="n">ds</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">default_units_dict</span><span class="p">[</span><span class="n">unit_key</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">ds</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">default_units_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+            <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+    <span class="k">if</span> <span class="n">variable_units_dict</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">ds</span><span class="o">.</span><span class="n">variables</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">ds</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">variable_units_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+
+    <span class="c1"># Adds metadata to the dataset if a metadata file is provided</span>
+    <span class="k">if</span> <span class="n">metadata_filename</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">ds</span> <span class="o">=</span> <span class="n">_ameriflux_metadata_processing</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">metadata_filename</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">ds</span></div>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">_ameriflux_metadata_processing</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">metadata_filename</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Adds metadata to an ameriflux dataset if a metadata file is provided.&quot;&quot;&quot;</span>
+    <span class="c1"># Read in metadata excel file if provided.</span>
+    <span class="n">meta_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">metadata_filename</span><span class="p">)</span>
+
+    <span class="c1"># Create a list for attributes and their respective values</span>
+    <span class="n">meta_key_list</span> <span class="o">=</span> <span class="n">meta_df</span><span class="p">[</span><span class="s1">&#39;VARIABLE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+    <span class="n">meta_value_list</span> <span class="o">=</span> <span class="n">meta_df</span><span class="p">[</span><span class="s1">&#39;DATAVALUE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+
+    <span class="c1"># Add attrs that are non duplicates as duplicates require more processing below</span>
+    <span class="n">non_duplicates</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">meta_key_list</span> <span class="k">if</span> <span class="n">meta_key_list</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="n">data_dict</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">meta_key_list</span><span class="p">,</span> <span class="n">meta_value_list</span><span class="p">):</span>
+        <span class="n">data_dict</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">non_duplicates</span><span class="p">:</span>
+        <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_dict</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="c1"># The code below to retrieve group metadata was done so that</span>
+    <span class="c1"># If the order changes of these attributes, which it can, it will find them regardless</span>
+    <span class="c1"># Also checks if a specific attribute is missing for a team member but not others</span>
+    <span class="n">meta_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">meta_key_list</span><span class="p">)</span>
+    <span class="c1"># Retrieve team_member metadata</span>
+    <span class="n">team_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">meta_arr</span> <span class="o">==</span> <span class="s1">&#39;TEAM_MEMBER_NAME&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">team_members</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">valid_names</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;TEAM_MEMBER_NAME&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;TEAM_MEMBER_EMAIL&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;TEAM_MEMBER_INSTITUTION&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;TEAM_MEMBER_ROLE&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;TEAM_MEMBER_ORCID&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;TEAM_MEMBER_ADDRESS&#39;</span><span class="p">,</span>
+    <span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">team_indices</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">j</span> <span class="o">==</span> <span class="n">team_indices</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">team_info_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">team_indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">team_indices</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span>
+            <span class="n">team_members_str</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="p">[</span>
+                <span class="n">team_members_str</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">meta_key_list</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">meta_value_list</span><span class="p">[</span><span class="n">k</span><span class="p">]))</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">team_info_range</span>
+                <span class="k">if</span> <span class="n">meta_key_list</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="ow">in</span> <span class="n">valid_names</span>
+            <span class="p">]</span>
+            <span class="n">result_str</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">team_members_str</span><span class="p">)</span>
+            <span class="n">team_members</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result_str</span><span class="p">)</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">team_info_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">team_indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">team_indices</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
+            <span class="n">team_members_str</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="p">[</span>
+                <span class="n">team_members_str</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">meta_key_list</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">meta_value_list</span><span class="p">[</span><span class="n">k</span><span class="p">]))</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">team_info_range</span>
+                <span class="k">if</span> <span class="n">meta_key_list</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="ow">in</span> <span class="n">valid_names</span>
+            <span class="p">]</span>
+            <span class="n">result_str</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">team_members_str</span><span class="p">)</span>
+            <span class="n">team_members</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result_str</span><span class="p">)</span>
+    <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;TEAM_MEMBERS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">team_members</span>
+
+    <span class="c1"># Retrieve doi contributor metadata</span>
+    <span class="n">doi_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">meta_arr</span> <span class="o">==</span> <span class="s1">&#39;DOI_CONTRIBUTOR_DATAPRODUCT&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">doi_members</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">valid_doi_names</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;DOI_CONTRIBUTOR_DATAPRODUCT&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;DOI_CONTRIBUTOR_NAME&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;DOI_CONTRIBUTOR_ROLE&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;DOI_CONTRIBUTOR_INSTITUTION&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;DOI_CONTRIBUTOR_EMAIL&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;DOI_CONTRIBUTOR_ORCID&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;DOI_CONTRIBUTOR_DATE_START&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;DOI_CONTRIBUTOR_DATE_END&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;DOI CONTRIBUTOR_ADDRESS&#39;</span><span class="p">,</span>
+    <span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">doi_indices</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">j</span> <span class="o">==</span> <span class="n">doi_indices</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">doi_info_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">doi_indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">doi_indices</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span>
+            <span class="n">doi_contrib_str</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="p">[</span>
+                <span class="n">doi_contrib_str</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">meta_key_list</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">meta_value_list</span><span class="p">[</span><span class="n">k</span><span class="p">]))</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">doi_info_range</span>
+                <span class="k">if</span> <span class="n">meta_key_list</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="ow">in</span> <span class="n">valid_doi_names</span>
+            <span class="p">]</span>
+            <span class="n">result_doi_str</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">doi_contrib_str</span><span class="p">)</span>
+            <span class="n">doi_members</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result_doi_str</span><span class="p">)</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">doi_info_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">doi_indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">doi_indices</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
+            <span class="n">doi_contrib_str</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="p">[</span>
+                <span class="n">doi_contrib_str</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">meta_key_list</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">meta_value_list</span><span class="p">[</span><span class="n">k</span><span class="p">]))</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">doi_info_range</span>
+                <span class="k">if</span> <span class="n">meta_key_list</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="ow">in</span> <span class="n">valid_doi_names</span>
+            <span class="p">]</span>
+            <span class="n">result_doi_str</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">doi_contrib_str</span><span class="p">)</span>
+            <span class="n">doi_members</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result_doi_str</span><span class="p">)</span>
+    <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;DOI_CONTRIBUTORS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">doi_members</span>
+
+    <span class="c1"># Retrieve flux method metadata</span>
+    <span class="n">flux_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">meta_arr</span> <span class="o">==</span> <span class="s1">&#39;FLUX_MEASUREMENTS_METHOD&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">flux_members</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">valid_flux_names</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;FLUX_MEASUREMENTS_METHOD&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FLUX_MEASUREMENTS_VARIABLE&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FLUX_MEASUREMENTS_DATE_START&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FLUX_MEASUREMENTS_DATE_END&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FLUX_MEASUREMENTS_OPERATIONS&#39;</span><span class="p">,</span>
+    <span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">flux_indices</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">j</span> <span class="o">==</span> <span class="n">flux_indices</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">flux_info_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">flux_indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">flux_indices</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span>
+            <span class="n">flux_str</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="p">[</span>
+                <span class="n">flux_str</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">meta_key_list</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">meta_value_list</span><span class="p">[</span><span class="n">k</span><span class="p">]))</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">flux_info_range</span>
+                <span class="k">if</span> <span class="n">meta_key_list</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="ow">in</span> <span class="n">valid_flux_names</span>
+            <span class="p">]</span>
+            <span class="n">result_flux_str</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flux_str</span><span class="p">)</span>
+            <span class="n">flux_members</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result_flux_str</span><span class="p">)</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">flux_info_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">flux_indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">flux_indices</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
+            <span class="n">flux_str</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="p">[</span>
+                <span class="n">flux_str</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">meta_key_list</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">meta_value_list</span><span class="p">[</span><span class="n">k</span><span class="p">]))</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">flux_info_range</span>
+                <span class="k">if</span> <span class="n">meta_key_list</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="ow">in</span> <span class="n">valid_flux_names</span>
+            <span class="p">]</span>
+            <span class="n">result_flux_str</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flux_str</span><span class="p">)</span>
+            <span class="n">flux_members</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result_flux_str</span><span class="p">)</span>
+    <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;FLUX_MEASUREMENTS_METHODS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">flux_members</span>
+    <span class="k">return</span> <span class="n">ds</span>
+
+
+<div class="viewcode-block" id="convert_to_ameriflux"><a class="viewcode-back" href="../../../API/generated/act.io.convert_to_ameriflux.html#act.io.convert_to_ameriflux">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">convert_to_ameriflux</span><span class="p">(</span>
+    <span class="n">ds</span><span class="p">,</span>
+    <span class="n">variable_mapping</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">soil_mapping</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">depth_profile</span><span class="o">=</span><span class="p">[</span><span class="mf">2.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span>
+    <span class="n">include_missing_variables</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+
+<span class="sd">    Returns `xarray.Dataset` with stored data and metadata from a user-defined</span>
+<span class="sd">    query of ARM-standard netCDF files from a single datastream. Has some procedures</span>
+<span class="sd">    to ensure time is correctly fomatted in returned Dataset.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    ds : xarray.Dataset</span>
+<span class="sd">        Dataset of data to convert to AmeriFlux format</span>
+<span class="sd">    variable_mapping : dict</span>
+<span class="sd">        Dictionary of variables mappings.  The key should be the name of the variable</span>
+<span class="sd">        in the Dataset with the values being dictionaries of the AmeriFlux name and units.</span>
+<span class="sd">        For example:</span>
+<span class="sd">            var_mapping = {</span>
+<span class="sd">                &#39;co2_flux&#39;: {&#39;name&#39;: &#39;FC&#39;, &#39;units&#39;: &#39;umol/(m^2 s)&#39;},</span>
+<span class="sd">            }</span>
+<span class="sd">    soil_mapping : dict</span>
+<span class="sd">        Dictionary of soil variables mappings following the same formatting as variable_mapping.</span>
+<span class="sd">        It is understood that the AmeriFlux name may be the same for some variables.  This</span>
+<span class="sd">        script attempts to automatically name these measurements. If a variable is not dimensioned</span>
+<span class="sd">        by a depth nor has a sensor_height attribute, it will automatically assume that it&#39;s</span>
+<span class="sd">        at the first depth in the depth_profile variable.</span>
+<span class="sd">    depth_profile : list</span>
+<span class="sd">        List of depths that the variables will be mapped to.  If a depth is not in this list,</span>
+<span class="sd">        the index chosen will be the one closest to the depth value.</span>
+<span class="sd">    include_missing_variables : boolean</span>
+<span class="sd">        If there variables that are completely missing (-9999) chose whether or not to include</span>
+<span class="sd">        them in the DataFrame.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    df : pandas.DataFrame (or None)</span>
+<span class="sd">        Returns a pandas dataframe for easy writing to csv</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Use ARM variable mappings if none provided</span>
+    <span class="k">if</span> <span class="n">variable_mapping</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s1">&#39;Variable mapping was not provided, using default ARM mapping&#39;</span><span class="p">)</span>
+        <span class="c1"># Define variable mapping and units</span>
+        <span class="c1"># The key is the variable name in the data and the name in the dictionary</span>
+        <span class="c1"># is the AmeriFlux Name</span>
+        <span class="n">var_mapping</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;co2_flux&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;FC&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;umol/(m^2 s)&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;co2_molar_fraction&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;CO2&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;nmol/mol&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;co2_mixing_ratio&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;CO2_MIXING_RATIO&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;umol/mol&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;h2o_mole_fraction&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;H2O&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;mmol/mol&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;h2o_mixing_ratio&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;H2O_MIXING_RATIO&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;mmol/mol&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;ch4_mole_fraction&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;CH4&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;nmol/mol&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;ch4_mixing_ratio&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;CH4_MIXING_RATIO&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;nmol/mol&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;momentum_flux&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;TAU&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;kg/(m s^2)&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;sensible_heat_flux&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;W/m^2&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;latent_flux&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;LE&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;W/m^2&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;air_temperature&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;TA&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;deg C&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;air_pressure&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;PA&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;kPa&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;relative_humidity&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;RH&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;%&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;sonic_temperature&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;T_SONIC&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;deg C&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;water_vapor_pressure_defecit&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;VPD&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;hPa&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;Monin_Obukhov_length&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;MO_LENGTH&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;m&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;Monin_Obukhov_stability_parameter&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;ZL&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;mean_wind&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;WS&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;m/s&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;wind_direction_from_north&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;WD&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;deg&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;friction_velocity&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;USTAR&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;m/s&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;maximum_instantaneous_wind_speed&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;WS_MAX&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;m/s&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;down_short_hemisp&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;SW_IN&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;W/m^2&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;up_short_hemisp&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;SW_OUT&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;W/m^2&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;down_long&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;LW_IN&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;W/m^2&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;up_long&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;LW_OUT&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;W/m^2&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;albedo&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;ALB&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;%&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;net_radiation&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;NETRAD&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;W/m^2&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;par_inc&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;PPFD_IN&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;umol/(m^2 s)&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;par_ref&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;PPFD_OUT&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;umol/(m^2 s)&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;precip&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;P&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;mm&#39;</span><span class="p">},</span>
+        <span class="p">}</span>
+
+    <span class="c1"># Use ARM variable mappings if none provided</span>
+    <span class="c1"># Similar to the above.  This has only been tested on the ARM</span>
+    <span class="c1"># ECOR, SEBS, STAMP, and AMC combined.  The automated naming may</span>
+    <span class="c1"># not work for all cases</span>
+    <span class="k">if</span> <span class="n">soil_mapping</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s1">&#39;Soil variable mapping was not provided, using default ARM mapping&#39;</span><span class="p">)</span>
+        <span class="n">soil_mapping</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;surface_soil_heat_flux&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;G&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;W/m^2&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;soil_temp&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;TS&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;deg C&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;temp&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;TS&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;deg C&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;soil_moisture&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;SWC&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;%&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;soil_specific_water_content&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;SWC&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;%&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;vwc&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;SWC&#39;</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;%&#39;</span><span class="p">},</span>
+        <span class="p">}</span>
+
+    <span class="c1"># Loop through variables and update units to the AmeriFlux standard</span>
+    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">ds</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">var_mapping</span><span class="p">:</span>
+            <span class="n">ds</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">change_units</span><span class="p">(</span><span class="n">variables</span><span class="o">=</span><span class="n">v</span><span class="p">,</span> <span class="n">desired_unit</span><span class="o">=</span><span class="n">var_mapping</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="s1">&#39;units&#39;</span><span class="p">])</span>
+
+    <span class="c1"># Get start/end time stamps</span>
+    <span class="n">ts_start</span> <span class="o">=</span> <span class="n">ds</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y%m</span><span class="si">%d</span><span class="s1">%H%M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
+    <span class="n">ts_end</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">t</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">timedelta64</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y%m</span><span class="si">%d</span><span class="s1">%H%M&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">ds</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+    <span class="p">]</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;TIMESTAMP_START&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ts_start</span>
+    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;TIMESTAMP_END&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ts_end</span>
+
+    <span class="c1"># Loop through the variables in the var mapping dictionary and add data to dictionary</span>
+    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">var_mapping</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">ds</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;missing_value&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ds</span><span class="p">[</span><span class="n">v</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">:</span>
+                <span class="n">ds</span><span class="p">[</span><span class="n">v</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;missing_value&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">9999</span>
+            <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">ds</span><span class="p">[</span><span class="n">v</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()):</span>
+                <span class="k">if</span> <span class="n">include_missing_variables</span><span class="p">:</span>
+                    <span class="n">data</span><span class="p">[</span><span class="n">var_mapping</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">ds</span><span class="p">[</span><span class="n">v</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">var_mapping</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">ds</span><span class="p">[</span><span class="n">v</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">include_missing_variables</span><span class="p">:</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">var_mapping</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">ds</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="o">-</span><span class="mi">9999</span><span class="p">)</span>
+
+    <span class="c1"># Automated naming for the soil variables</span>
+    <span class="c1"># Again, this may not work for other cases.  Careful review is needed.</span>
+    <span class="n">prev_var</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">soil_mapping</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">soil_mapping</span><span class="p">[</span><span class="n">var</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="n">prev_var</span><span class="p">:</span>
+            <span class="n">h</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">prev_var</span> <span class="o">=</span> <span class="n">soil_mapping</span><span class="p">[</span><span class="n">var</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+        <span class="n">soil_vars</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">v2</span>
+            <span class="k">for</span> <span class="n">v2</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">ds</span><span class="p">)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">v2</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">var</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="s1">&#39;std&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">v2</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="s1">&#39;qc&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">v2</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="s1">&#39;net&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">v2</span><span class="p">)</span>
+        <span class="p">]</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">svar</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">soil_vars</span><span class="p">):</span>
+            <span class="n">vert</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;avg&#39;</span> <span class="ow">in</span> <span class="n">svar</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="s1">&#39;average&#39;</span> <span class="ow">in</span> <span class="n">svar</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="n">soil_data</span> <span class="o">=</span> <span class="n">ds</span><span class="p">[</span><span class="n">svar</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+            <span class="n">data_shape</span> <span class="o">=</span> <span class="n">soil_data</span><span class="o">.</span><span class="n">shape</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_shape</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">coords</span> <span class="o">=</span> <span class="n">ds</span><span class="p">[</span><span class="n">svar</span><span class="p">]</span><span class="o">.</span><span class="n">coords</span>
+                <span class="n">depth_name</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">coords</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+                <span class="n">depth_values</span> <span class="o">=</span> <span class="n">ds</span><span class="p">[</span><span class="n">depth_name</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+                <span class="k">for</span> <span class="n">depth_ind</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">depth_values</span><span class="p">)):</span>
+                    <span class="n">soil_data_depth</span> <span class="o">=</span> <span class="n">soil_data</span><span class="p">[:,</span> <span class="n">depth_ind</span><span class="p">]</span>
+                    <span class="n">vert</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">depth_profile</span> <span class="o">==</span> <span class="n">depth_values</span><span class="p">[</span><span class="n">depth_ind</span><span class="p">])[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="n">new_name</span> <span class="o">=</span> <span class="s1">&#39;_&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">soil_mapping</span><span class="p">[</span><span class="n">var</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="nb">str</span><span class="p">(</span><span class="n">h</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">vert</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">r</span><span class="p">)])</span>
+                    <span class="n">data</span><span class="p">[</span><span class="n">new_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">soil_data_depth</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="s1">&#39;sensor_height&#39;</span> <span class="ow">in</span> <span class="n">ds</span><span class="p">[</span><span class="n">svar</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">:</span>
+                    <span class="n">sensor_ht</span> <span class="o">=</span> <span class="n">ds</span><span class="p">[</span><span class="n">svar</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;sensor_height&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+                    <span class="n">depth</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">sensor_ht</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+                    <span class="n">units</span> <span class="o">=</span> <span class="n">sensor_ht</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                    <span class="k">if</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;cm&#39;</span><span class="p">:</span>
+                        <span class="n">vert</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">depth_profile</span><span class="p">)</span> <span class="o">-</span> <span class="n">depth</span><span class="p">))</span> <span class="o">+</span> <span class="mi">1</span>
+                <span class="n">new_name</span> <span class="o">=</span> <span class="s1">&#39;_&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">soil_mapping</span><span class="p">[</span><span class="n">var</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="nb">str</span><span class="p">(</span><span class="n">h</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">vert</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">r</span><span class="p">)])</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">new_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">soil_data</span>
+            <span class="n">h</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="c1"># Convert dictionary to dataframe and return</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="o">-</span><span class="mf">9999.0</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">df</span></div>
+</pre></div>
+<div class="section ablog__blog_comments">
+   
+</div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2018-2024, ACT Developers.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

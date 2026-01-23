@@ -1,0 +1,53 @@
+﻿act.qc
+======
+
+.. rubric:: Description
+
+.. automodule:: act.qc
+
+.. currentmodule:: act.qc
+
+
+.. rubric:: Classes
+
+.. autosummary::
+    :toctree: .
+    
+    CleanDataset
+    
+    QCFilter
+    
+    QCSummary
+    
+    QCTests
+    
+    SP2ParticleCriteria
+    
+
+
+
+
+.. rubric:: Functions
+
+.. autosummary::
+    :toctree: .
+    
+    add_dqr_to_qc
+    
+    fft_shading_test
+    
+    fft_shading_test_process
+    
+    get_waveform_statistics
+    
+    parse_bit
+    
+    print_dqr
+    
+    read_yaml_supplemental_qc
+    
+    set_bit
+    
+    unset_bit
+    
+

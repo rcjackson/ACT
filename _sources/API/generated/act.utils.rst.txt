@@ -1,0 +1,105 @@
+﻿act.utils
+=========
+
+.. rubric:: Description
+
+.. automodule:: act.utils
+
+.. currentmodule:: act.utils
+
+
+.. rubric:: Classes
+
+.. autosummary::
+    :toctree: .
+    
+    ChangeUnits
+    
+    DatastreamParserARM
+    
+
+
+
+
+.. rubric:: Functions
+
+.. autosummary::
+    :toctree: .
+    
+    accumulate_precip
+    
+    add_in_nan
+    
+    add_solar_variable
+    
+    adjust_timestamp
+    
+    arm_site_location_search
+    
+    arm_standards_validator
+    
+    assign_coordinates
+    
+    calc_cog_sog
+    
+    calculate_dqr_times
+    
+    calculate_percentages
+    
+    cleanup_files
+    
+    convert_2d_to_1d
+    
+    convert_to_potential_temp
+    
+    convert_units
+    
+    create_pyart_obj
+    
+    date_parser
+    
+    dates_between
+    
+    datetime64_to_datetime
+    
+    decode_present_weather
+    
+    destination_azimuth_distance
+    
+    determine_time_delta
+    
+    generate_movie
+    
+    get_missing_value
+    
+    get_solar_azimuth_elevation
+    
+    get_sunrise_sunset_noon
+    
+    height_adjusted_pressure
+    
+    height_adjusted_temperature
+    
+    is_gunzip_file
+    
+    is_sun_visible
+    
+    numpy_to_arm_date
+    
+    pack_gzip
+    
+    pack_tar
+    
+    planck_converter
+    
+    proc_scog
+    
+    reduce_time_ranges
+    
+    ts_weighted_average
+    
+    unpack_gzip
+    
+    unpack_tar
+    
+

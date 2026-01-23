@@ -1,0 +1,52 @@
+﻿act.discovery
+=============
+
+.. rubric:: Description
+
+.. automodule:: act.discovery
+
+.. currentmodule:: act.discovery
+
+
+
+
+.. rubric:: Functions
+
+.. autosummary::
+    :toctree: .
+    
+    download_ameriflux_data
+    
+    download_arm_data
+    
+    download_arm_data_mod
+    
+    download_mplnet_data
+    
+    download_neon_data
+    
+    download_noaa_psl_data
+    
+    download_surfrad_data
+    
+    get_airnow_bounded_obs
+    
+    get_airnow_forecast
+    
+    get_airnow_obs
+    
+    get_arm_doi
+    
+    get_asos_data
+    
+    get_crop_type
+    
+    get_improve_data
+    
+    get_mplnet_meta
+    
+    get_neon_product_avail
+    
+    get_neon_site_products
+    
+
