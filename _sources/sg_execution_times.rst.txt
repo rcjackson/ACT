@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**15:38.246** total execution time for 65 files **from all galleries**:
+**21:25.276** total execution time for 65 files **from all galleries**:
 
 .. container::
 
@@ -32,198 +32,198 @@ Computation times
    * - Example
      - Time
      - Mem (MB)
-   * - :ref:`sphx_glr_source_auto_examples_retrievals_plot_gradient_pbl.py` (``../../examples/retrievals/plot_gradient_pbl.py``)
-     - 10:23.815
+   * - :ref:`sphx_glr_auto_examples_retrievals_plot_gradient_pbl.py` (``../../examples/retrievals/plot_gradient_pbl.py``)
+     - 10:46.740
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_workflows_plot_qc_transforms.py` (``../../examples/workflows/plot_qc_transforms.py``)
-     - 01:31.438
+   * - :ref:`sphx_glr_auto_examples_workflows_plot_amf3_comparisons.py` (``../../examples/workflows/plot_amf3_comparisons.py``)
+     - 05:23.428
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_io_plot_convert_ameriflux.py` (``../../examples/io/plot_convert_ameriflux.py``)
-     - 01:07.125
+   * - :ref:`sphx_glr_auto_examples_io_plot_convert_ameriflux.py` (``../../examples/io/plot_convert_ameriflux.py``)
+     - 01:32.868
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_discovery_plot_mplnet.py` (``../../examples/discovery/plot_mplnet.py``)
-     - 00:28.087
+   * - :ref:`sphx_glr_auto_examples_workflows_plot_qc_transforms.py` (``../../examples/workflows/plot_qc_transforms.py``)
+     - 01:32.610
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_workflows_plot_courage_comparison.py` (``../../examples/workflows/plot_courage_comparison.py``)
-     - 00:17.783
+   * - :ref:`sphx_glr_auto_examples_workflows_plot_courage_comparison.py` (``../../examples/workflows/plot_courage_comparison.py``)
+     - 00:17.904
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_workflows_plot_merged_product.py` (``../../examples/workflows/plot_merged_product.py``)
-     - 00:17.540
+   * - :ref:`sphx_glr_auto_examples_workflows_plot_merged_product.py` (``../../examples/workflows/plot_merged_product.py``)
+     - 00:17.726
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_workflows_plot_amf3_comparisons.py` (``../../examples/workflows/plot_amf3_comparisons.py``)
-     - 00:11.340
+   * - :ref:`sphx_glr_auto_examples_corrections_plot_correct_ship_wind_data.py` (``../../examples/corrections/plot_correct_ship_wind_data.py``)
+     - 00:08.971
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_corrections_plot_correct_ship_wind_data.py` (``../../examples/corrections/plot_correct_ship_wind_data.py``)
-     - 00:07.866
+   * - :ref:`sphx_glr_auto_examples_discovery_plot_noaa_fmcw_moment.py` (``../../examples/discovery/plot_noaa_fmcw_moment.py``)
+     - 00:06.428
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_workflows_plot_weighted_average.py` (``../../examples/workflows/plot_weighted_average.py``)
-     - 00:05.099
+   * - :ref:`sphx_glr_auto_examples_workflows_plot_multiple_dataset.py` (``../../examples/workflows/plot_multiple_dataset.py``)
+     - 00:04.931
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_discovery_plot_noaa_fmcw_moment.py` (``../../examples/discovery/plot_noaa_fmcw_moment.py``)
-     - 00:05.002
+   * - :ref:`sphx_glr_auto_examples_qc_plot_arm_qc.py` (``../../examples/qc/plot_arm_qc.py``)
+     - 00:04.893
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_workflows_plot_multiple_dataset.py` (``../../examples/workflows/plot_multiple_dataset.py``)
-     - 00:04.879
+   * - :ref:`sphx_glr_auto_examples_retrievals_plot_cbh_sobel.py` (``../../examples/retrievals/plot_cbh_sobel.py``)
+     - 00:04.673
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_retrievals_plot_cbh_sobel.py` (``../../examples/retrievals/plot_cbh_sobel.py``)
-     - 00:04.680
+   * - :ref:`sphx_glr_auto_examples_workflows_plot_weighted_average.py` (``../../examples/workflows/plot_weighted_average.py``)
+     - 00:04.495
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_utils_plot_change_units.py` (``../../examples/utils/plot_change_units.py``)
-     - 00:03.892
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_satellite.py` (``../../examples/plotting/plot_satellite.py``)
+     - 00:04.489
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_qc_plot_arm_qc.py` (``../../examples/qc/plot_arm_qc.py``)
-     - 00:03.887
+   * - :ref:`sphx_glr_auto_examples_io_plot_hysplit.py` (``../../examples/io/plot_hysplit.py``)
+     - 00:04.257
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_satellite.py` (``../../examples/plotting/plot_satellite.py``)
-     - 00:03.861
+   * - :ref:`sphx_glr_auto_examples_discovery_plot_mplnet.py` (``../../examples/discovery/plot_mplnet.py``)
+     - 00:04.005
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_io_plot_hysplit.py` (``../../examples/io/plot_hysplit.py``)
-     - 00:03.624
+   * - :ref:`sphx_glr_auto_examples_utils_plot_change_units.py` (``../../examples/utils/plot_change_units.py``)
+     - 00:03.414
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_days.py` (``../../examples/plotting/plot_days.py``)
-     - 00:02.629
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_days.py` (``../../examples/plotting/plot_days.py``)
+     - 00:02.562
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_ceil.py` (``../../examples/plotting/plot_ceil.py``)
-     - 00:02.347
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_ceil.py` (``../../examples/plotting/plot_ceil.py``)
+     - 00:02.383
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_io_plot_create_arm_ds.py` (``../../examples/io/plot_create_arm_ds.py``)
-     - 00:02.274
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_groups.py` (``../../examples/plotting/plot_groups.py``)
+     - 00:02.180
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_data_rose.py` (``../../examples/plotting/plot_data_rose.py``)
-     - 00:02.071
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_data_rose.py` (``../../examples/plotting/plot_data_rose.py``)
+     - 00:02.125
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_discovery_plot_improve.py` (``../../examples/discovery/plot_improve.py``)
-     - 00:01.716
+   * - :ref:`sphx_glr_auto_examples_discovery_plot_improve.py` (``../../examples/discovery/plot_improve.py``)
+     - 00:02.036
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_groups.py` (``../../examples/plotting/plot_groups.py``)
-     - 00:01.699
+   * - :ref:`sphx_glr_auto_examples_io_plot_icartt.py` (``../../examples/io/plot_icartt.py``)
+     - 00:02.034
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_wind_rose.py` (``../../examples/plotting/plot_wind_rose.py``)
-     - 00:01.526
+   * - :ref:`sphx_glr_auto_examples_io_plot_create_arm_ds.py` (``../../examples/io/plot_create_arm_ds.py``)
+     - 00:01.950
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_io_plot_icartt.py` (``../../examples/io/plot_icartt.py``)
-     - 00:01.487
+   * - :ref:`sphx_glr_auto_examples_qc_plot_relative_variability.py` (``../../examples/qc/plot_relative_variability.py``)
+     - 00:01.773
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_utils_plot_tar.py` (``../../examples/utils/plot_tar.py``)
-     - 00:01.477
+   * - :ref:`sphx_glr_auto_examples_qc_plot_qc_bsrn.py` (``../../examples/qc/plot_qc_bsrn.py``)
+     - 00:01.687
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_qc_plot_relative_variability.py` (``../../examples/qc/plot_relative_variability.py``)
-     - 00:01.462
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_xsection.py` (``../../examples/plotting/plot_xsection.py``)
+     - 00:01.557
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_discovery_plot_asos_temp.py` (``../../examples/discovery/plot_asos_temp.py``)
-     - 00:01.435
+   * - :ref:`sphx_glr_auto_examples_io_plot_surfrad.py` (``../../examples/io/plot_surfrad.py``)
+     - 00:01.533
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_qc_plot_qc_bsrn.py` (``../../examples/qc/plot_qc_bsrn.py``)
-     - 00:01.394
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_wind_rose.py` (``../../examples/plotting/plot_wind_rose.py``)
+     - 00:01.516
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_examples.py` (``../../examples/plotting/plot_examples.py``)
-     - 00:01.384
+   * - :ref:`sphx_glr_auto_examples_utils_plot_tar.py` (``../../examples/utils/plot_tar.py``)
+     - 00:01.485
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_rh_timeseries.py` (``../../examples/plotting/plot_rh_timeseries.py``)
-     - 00:01.307
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_examples.py` (``../../examples/plotting/plot_examples.py``)
+     - 00:01.455
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_xsection.py` (``../../examples/plotting/plot_xsection.py``)
-     - 00:01.200
+   * - :ref:`sphx_glr_auto_examples_discovery_plot_asos_temp.py` (``../../examples/discovery/plot_asos_temp.py``)
+     - 00:01.236
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_daytime_averages.py` (``../../examples/plotting/plot_daytime_averages.py``)
-     - 00:01.037
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_rh_timeseries.py` (``../../examples/plotting/plot_rh_timeseries.py``)
+     - 00:01.234
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_contour.py` (``../../examples/plotting/plot_contour.py``)
-     - 00:00.990
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_daytime_averages.py` (``../../examples/plotting/plot_daytime_averages.py``)
+     - 00:01.099
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_io_plot_raw_minimpl.py` (``../../examples/io/plot_raw_minimpl.py``)
-     - 00:00.844
+   * - :ref:`sphx_glr_auto_examples_io_plot_raw_minimpl.py` (``../../examples/io/plot_raw_minimpl.py``)
+     - 00:01.070
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_state_variable.py` (``../../examples/plotting/plot_state_variable.py``)
-     - 00:00.832
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_contour.py` (``../../examples/plotting/plot_contour.py``)
+     - 00:01.064
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_qc.py` (``../../examples/plotting/plot_qc.py``)
-     - 00:00.748
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_state_variable.py` (``../../examples/plotting/plot_state_variable.py``)
+     - 00:00.919
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_aaf_track.py` (``../../examples/plotting/plot_aaf_track.py``)
-     - 00:00.654
+   * - :ref:`sphx_glr_auto_examples_io_plot_sodar.py` (``../../examples/io/plot_sodar.py``)
+     - 00:00.867
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_multiple_column.py` (``../../examples/plotting/plot_multiple_column.py``)
-     - 00:00.652
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_qc.py` (``../../examples/plotting/plot_qc.py``)
+     - 00:00.823
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_io_plot_sodar.py` (``../../examples/io/plot_sodar.py``)
-     - 00:00.638
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_multiple_column.py` (``../../examples/plotting/plot_multiple_column.py``)
+     - 00:00.770
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_heatmap.py` (``../../examples/plotting/plot_heatmap.py``)
-     - 00:00.630
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_heatmap.py` (``../../examples/plotting/plot_heatmap.py``)
+     - 00:00.702
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_scatter.py` (``../../examples/plotting/plot_scatter.py``)
-     - 00:00.553
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_aaf_track.py` (``../../examples/plotting/plot_aaf_track.py``)
+     - 00:00.690
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_qc_plot_dqr_print.py` (``../../examples/qc/plot_dqr_print.py``)
-     - 00:00.506
+   * - :ref:`sphx_glr_auto_examples_qc_plot_dqr_print.py` (``../../examples/qc/plot_dqr_print.py``)
+     - 00:00.665
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_skewt.py` (``../../examples/plotting/plot_skewt.py``)
-     - 00:00.483
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_scatter.py` (``../../examples/plotting/plot_scatter.py``)
+     - 00:00.614
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_time_height_scatter.py` (``../../examples/plotting/plot_time_height_scatter.py``)
-     - 00:00.482
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_time_height_scatter.py` (``../../examples/plotting/plot_time_height_scatter.py``)
+     - 00:00.536
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_enhanced_skewt.py` (``../../examples/plotting/plot_enhanced_skewt.py``)
-     - 00:00.462
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_enhanced_skewt.py` (``../../examples/plotting/plot_enhanced_skewt.py``)
+     - 00:00.518
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_io_plot_surfrad.py` (``../../examples/io/plot_surfrad.py``)
-     - 00:00.454
+   * - :ref:`sphx_glr_auto_examples_qc_plot_dqr_qc.py` (``../../examples/qc/plot_dqr_qc.py``)
+     - 00:00.511
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_violin.py` (``../../examples/plotting/plot_violin.py``)
-     - 00:00.433
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_skewt.py` (``../../examples/plotting/plot_skewt.py``)
+     - 00:00.510
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_qc_plot_dqr_qc.py` (``../../examples/qc/plot_dqr_qc.py``)
-     - 00:00.367
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_violin.py` (``../../examples/plotting/plot_violin.py``)
+     - 00:00.479
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_skewt_with_text.py` (``../../examples/plotting/plot_skewt_with_text.py``)
-     - 00:00.315
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_stripes.py` (``../../examples/plotting/plot_stripes.py``)
+     - 00:00.468
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_presentweathercode.py` (``../../examples/plotting/plot_presentweathercode.py``)
-     - 00:00.243
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_skewt_with_text.py` (``../../examples/plotting/plot_skewt_with_text.py``)
+     - 00:00.372
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_size_distribution.py` (``../../examples/plotting/plot_size_distribution.py``)
-     - 00:00.236
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_presentweathercode.py` (``../../examples/plotting/plot_presentweathercode.py``)
+     - 00:00.305
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_sonde.py` (``../../examples/plotting/plot_sonde.py``)
-     - 00:00.219
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_size_distribution.py` (``../../examples/plotting/plot_size_distribution.py``)
+     - 00:00.275
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_secondary_y.py` (``../../examples/plotting/plot_secondary_y.py``)
-     - 00:00.202
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_sonde.py` (``../../examples/plotting/plot_sonde.py``)
+     - 00:00.268
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_qc_plot_force_line_qc.py` (``../../examples/qc/plot_force_line_qc.py``)
-     - 00:00.177
+   * - :ref:`sphx_glr_auto_examples_qc_plot_qc_step_change.py` (``../../examples/qc/plot_qc_step_change.py``)
+     - 00:00.235
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_stripes.py` (``../../examples/plotting/plot_stripes.py``)
-     - 00:00.176
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_secondary_y.py` (``../../examples/plotting/plot_secondary_y.py``)
+     - 00:00.233
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_qc_plot_qc_step_change.py` (``../../examples/qc/plot_qc_step_change.py``)
-     - 00:00.167
+   * - :ref:`sphx_glr_auto_examples_qc_plot_force_line_qc.py` (``../../examples/qc/plot_force_line_qc.py``)
+     - 00:00.232
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_retrievals_plot_get_stability_indices_example.py` (``../../examples/retrievals/plot_get_stability_indices_example.py``)
-     - 00:00.126
+   * - :ref:`sphx_glr_auto_examples_retrievals_plot_get_stability_indices_example.py` (``../../examples/retrievals/plot_get_stability_indices_example.py``)
+     - 00:00.136
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_hist_kwargs.py` (``../../examples/plotting/plot_hist_kwargs.py``)
-     - 00:00.092
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_hist_kwargs.py` (``../../examples/plotting/plot_hist_kwargs.py``)
+     - 00:00.109
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_plotting_plot_pie_chart.py` (``../../examples/plotting/plot_pie_chart.py``)
+   * - :ref:`sphx_glr_auto_examples_plotting_plot_pie_chart.py` (``../../examples/plotting/plot_pie_chart.py``)
+     - 00:00.086
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_utils_plot_calculated_percentages.py` (``../../examples/utils/plot_calculated_percentages.py``)
      - 00:00.075
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_utils_plot_calculated_percentages.py` (``../../examples/utils/plot_calculated_percentages.py``)
-     - 00:00.069
+   * - :ref:`sphx_glr_auto_examples_qc_plot_qc_example.py` (``../../examples/qc/plot_qc_example.py``)
+     - 00:00.061
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_qc_plot_qc_example.py` (``../../examples/qc/plot_qc_example.py``)
-     - 00:00.055
-     - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_utils_plot_parse_filename.py` (``../../examples/utils/plot_parse_filename.py``)
+   * - :ref:`sphx_glr_auto_examples_utils_plot_parse_filename.py` (``../../examples/utils/plot_parse_filename.py``)
      - 00:00.001
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_workflows_plot_aerioe_with_cbh.py` (``../../examples/workflows/plot_aerioe_with_cbh.py``)
+   * - :ref:`sphx_glr_auto_examples_workflows_plot_aerioe_with_cbh.py` (``../../examples/workflows/plot_aerioe_with_cbh.py``)
      - 00:00.001
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_discovery_plot_neon.py` (``../../examples/discovery/plot_neon.py``)
+   * - :ref:`sphx_glr_auto_examples_discovery_plot_neon.py` (``../../examples/discovery/plot_neon.py``)
      - 00:00.001
      - 0.0
-   * - :ref:`sphx_glr_source_auto_examples_discovery_plot_airnow.py` (``../../examples/discovery/plot_airnow.py``)
+   * - :ref:`sphx_glr_auto_examples_discovery_plot_airnow.py` (``../../examples/discovery/plot_airnow.py``)
      - 00:00.001
      - 0.0
