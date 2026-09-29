@@ -160,23 +160,6 @@ Examples showing different ways to discover data.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This example shows the different ways to pull air quality information from EPA&#x27;s AirNow API for a station near to SGP">
-
-.. only:: html
-
-  .. image:: /auto_examples/discovery/images/thumb/sphx_glr_plot_airnow_thumb.png
-    :alt:
-
-  :doc:`/auto_examples/discovery/plot_airnow`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Airnow Data</div>
-    </div>
-
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to download data from NEON and ARM 2m surface meteorology stations on the North Slope and plot them">
 
 .. only:: html
@@ -189,6 +172,23 @@ Examples showing different ways to discover data.
 .. raw:: html
 
       <div class="sphx-glr-thumbnail-title">NEON Data</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows the different ways to pull air quality information from EPA&#x27;s AirNow API for an area near the ARM Southern Great Plains (SGP) atmospheric observatory.">
+
+.. only:: html
+
+  .. image:: /auto_examples/discovery/images/thumb/sphx_glr_plot_airnow_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/discovery/plot_airnow`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">AirNow Data</div>
     </div>
 
 
@@ -1055,6 +1055,23 @@ Examples showing different ways to retrieve fields from data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="References: Tucker, S. C., Hardesty, R. M., &amp; Brewer, W. A. (2009). Estimating the planetary boundary layer height from Doppler lidar radial velocity measurements. Journal of Atmospheric and Oceanic Technology, 26(9), 1745-175">
+
+.. only:: html
+
+  .. image:: /auto_examples/retrievals/images/thumb/sphx_glr_plot_tucker_dl_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/retrievals/plot_tucker_dl`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Example for using the Tucker method to retrieve the planetary boundary layer height from Doppler lidar data.</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to calculate the cloud base heights using the sobel edge detection method.  This can be used for vertical radar and lidar data.">
 
 .. only:: html
@@ -1072,6 +1089,40 @@ Examples showing different ways to retrieve fields from data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to estimate the planetary boundary layer height via a Profile Method scheme, where a backscatter profile is fit to an idealized profile via an error function using non-linear least-squares optimization.">
+
+.. only:: html
+
+  .. image:: /auto_examples/retrievals/images/thumb/sphx_glr_plot_profile_fit_pbl_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/retrievals/plot_profile_fit_pbl`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Planetary Boundary Layer Height Profile Fit Retrievals</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to estimate the planetary boundary layer height via a Haar wavelet covariance transform retrieval">
+
+.. only:: html
+
+  .. image:: /auto_examples/retrievals/images/thumb/sphx_glr_plot_wavelet_pbl_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/retrievals/plot_wavelet_pbl`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Planetary Boundary Layer Height Wavelet Method Retrieval</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to estimate the planetary boundary layer height via a gradient method retrieval">
 
 .. only:: html
@@ -1084,6 +1135,23 @@ Examples showing different ways to retrieve fields from data.
 .. raw:: html
 
       <div class="sphx-glr-thumbnail-title">Planetary Boundary Layer Height Gradient Method Retrievals</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This examples shoes how to estimate the planetary boundary layer height via the Liu-Liang 2010 technique, a Bulk Richardson Number method, and the Heffter technique.">
+
+.. only:: html
+
+  .. image:: /auto_examples/retrievals/images/thumb/sphx_glr_plot_sonde_pbl_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/retrievals/plot_sonde_pbl`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Planetary Boundary Layer Height Profile via Radiosonde Retrievals</div>
     </div>
 
 
