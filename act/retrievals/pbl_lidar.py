@@ -447,7 +447,7 @@ def calculate_tucker_method_pbl(
         mask = mask[height_inds[0] :]
         match_inds = np.argwhere(mask).flatten()
         if match_inds.size > 0:
-            pbl_height = height[height_inds][match_inds[0]]
+            pbl_height = height[height_inds][match_inds[-1]]
         else:
             pbl_height = np.nan
         interval_times.append(interval_start + pd.Timedelta(interval) / 2)
