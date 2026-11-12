@@ -438,10 +438,11 @@ def calculate_tucker_method_pbl(
             noise_var[i] = (acf_values[0] - acf_values[1]) * total_var
             atmos_var[i] = total_var - noise_var[i]
 
-        # PBL height is the height of the n-th consecutive range gate,
-        # counted from the surface, whose atmospheric variance exceeds
-        # threshold
-        mask = (atmos_var < threshold) & (noise_var < noise_variance_threshold)
+        # PBL height is the height of the first usable gate whose atmospheric
+        # variance exceeds the fixed turbulence threshold.  The previous
+        # implementation used ``<`` here, selecting the first quiet gate and
+        # commonly pinning the retrieval to the lowest valid range gate.
+        mask = (atmos_var > threshold) & (noise_var < noise_variance_threshold)
         height_inds = np.argwhere(height > min_gate_height).astype(int).flatten()
         mask = mask[height_inds[0] :]
         match_inds = np.argwhere(mask).flatten()
